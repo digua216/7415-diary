@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>7415号日记</title>
+    <link rel="manifest" href="/7415-diary/manifest.json">
+    <link rel="apple-touch-icon" href="/7415-diary/icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="7415号日记">
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <meta name="theme-color" content="#f472b6">
+<meta name="description" content="学园都市 - 最后之作每日追踪器">
+<link rel="preload" href="/7415-diary/_expo/static/css/web-3749768ff5abd82025dc7467d63b6ca6.css" as="style"><link rel="stylesheet" href="/7415-diary/_expo/static/css/web-3749768ff5abd82025dc7467d63b6ca6.css"><link rel="icon" href="/7415-diary/favicon.ico" /></head>
+
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- 加载画面 -->
+    <div id="splash" style="position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(180deg,#fff1f2 0%,#fce7f3 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:99999;transition:opacity 0.5s;">
+      <img src="/7415-diary/loading.jpg" style="width:160px;height:160px;border-radius:20px;object-fit:cover;margin-bottom:20px;box-shadow:0 4px 20px rgba(236,72,153,0.2);" alt="loading" />
+      <div style="color:#ec4899;font-size:18px;font-weight:700;letter-spacing:1px;">7415号日记</div>
+      <div style="color:rgba(236,72,153,0.5);font-size:12px;margin-top:8px;">学园都市通信频道连接中...</div>
+      <div style="margin-top:24px;width:40px;height:40px;border:3px solid rgba(236,72,153,0.2);border-top-color:#ec4899;border-radius:50%;animation:spin 0.8s linear infinite;"></div>
+    </div>
+    <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="/7415-diary/_expo/static/js/web/index-2c01e2ab838084cba512536efbe6ea71.js" defer></script>
+  <script>
+    // 当 React 渲染完成后隐藏加载画面
+    var checkRoot = setInterval(function() {
+      if (document.getElementById('root') && document.getElementById('root').children.length > 0) {
+        clearInterval(checkRoot);
+        var splash = document.getElementById('splash');
+        if (splash) {
+          splash.style.opacity = '0';
+          setTimeout(function() { splash.remove(); }, 500);
+        }
+      }
+    }, 100);
+
+    // 注册 Service Worker（PWA 安装必须）
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/7415-diary/service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>

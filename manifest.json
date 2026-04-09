@@ -1,0 +1,37 @@
+{
+  "name": "7415号日记",
+  "short_name": "7415号日记",
+  "description": "学园都市 - 最后之作每日追踪器",
+  "start_url": "/7415-diary/",
+  "scope": "/7415-diary/",
+  "display": "standalone",
+  "background_color": "#fff1f2",
+  "theme_color": "#f472b6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/7415-diary/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/7415-diary/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/7415-diary/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/7415-diary/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
